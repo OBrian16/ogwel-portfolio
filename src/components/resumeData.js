@@ -2,9 +2,9 @@ let resumeData = {
     "imagebaseurl": "http://localhost:3000/",
     "name": "Brian Ogwel",
     "role": "Full Stack Developer",
-    "linkedinId": "Your LinkedIn Id",
-    "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "linkedinId": "Brian Ogwel",
+    "skypeid": "briwell16@gmail.com",
+    "roleDescription": "I am specialized in both front-end and back-end development. I Design Web applications, Linux user and also interested in Payment Integrations. I am a graduate in Bachelor of Business Information Technology.",
     "socialLinks": [
         {
             "name": "linkedin",
