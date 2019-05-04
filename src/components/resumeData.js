@@ -27,5 +27,10 @@ let resumeData = {
             "className": "fa fa-skype"
         }
     ],
+    "aboutme": "I am currently in my final year of study at Jomo Kenyatta University of Agriculture and Technology (JKUAT), undertaking Bachelor of Business Information Technology (BBIT) and also working at Data Integrated Limited as a Full Stack Developer. ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd dddddd ddddd dddddd dddddddddddddddd dddddddddddddddd ddddddddddddddddddddddddddddddd dddddddddddddddd ddddddddddddddddddd ddddddddd ddddddddddddddd dddddddddd dddddddddddddd d d       dddd ddddddd dd  ddddd dd  ddddddddddddd d d dddddd ddd ",
+    "address1": "Mara Savannah Embakasi",
+    "address2": "Nairobi Kenya",
+    "mobile": "+254 726 618 252",
+    "website": "https://www.dataintegrated.com",
 }
 export default resumeData
