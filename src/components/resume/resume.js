@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 export default class Resume extends Component {
     render() {
+        let resumeData = this.props.resumeData;
         return (
             <React.Fragment>
                 <section id="resume">
@@ -14,39 +15,23 @@ export default class Resume extends Component {
                             </h1>
                         </div>
                         <div className="nine columns main-col">
-                            <div className="row item">
-                                <div className="twelve columns">
-                                    <h3>University of Life</h3>
-                                    <p className="info">Master in Graphic Design
-                        <span>•</span>
-                                        <em className="date">April 2007</em>
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                                        nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                                        vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-          </p>
-                                </div>
-                            </div>
-                            {/* item end */}
-                            <div className="row item">
-                                <div className="twelve columns">
-                                    <h3>School of Cool Designers</h3>
-                                    <p className="info">B.A. Degree in Graphic Design
-            <span>•</span>
-                                        <em className="date">March 2003</em>
-                                    </p>
-                                    <p>
-                                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
-                                        amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
-                                        tincidunt auctor a ornare odio. Sed non mauris vitae erat
-          </p>
-                                </div>
-                            </div>
-                            {/* item end */}
-                        </div>
+                        {
+                            resumeData.education && resumeData.education.map((item)=>{
+                                return(
+                    <div className="row item">
+                       <div className="twelve columns">
+                          <h3>{item.UniversityName}</h3>
+                          <p className="info">
+                          {item.specialization}
+                          <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
+                          <p>
+                          {item.Achievements}
+                          </p>
+                       </div>
+                    </div>
+                  )
+                })
+              }
                         {/* main-col end */}
                     </div>
                     {/* End Education */}
@@ -146,6 +131,7 @@ export default class Resume extends Component {
                         {/* main-col end */}
                     </div>
                     {/* End skills */}
+                    </div>
                 </section>
 
             </React.Fragment>

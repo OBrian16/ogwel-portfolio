@@ -34,7 +34,7 @@ export default class Header extends Component {
                     <div className="row banner">
                         <div className="banner-text">
                             <h1 className="responsive-headline">I am {resumeData.name}</h1>
-                            <h3>I am a {resumeData.role} based in Nairobi Kenya. {resumeData.roleDescription}
+                            <h3>I am a <span>{resumeData.role}</span> based in <span>{resumeData.address2}.</span> {resumeData.roleDescription}
                             </h3>
                             <hr />
 
